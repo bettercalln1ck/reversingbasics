@@ -1,0 +1,6 @@
+Some common registers:
+%eip: The Instruction pointer register. It stores the address of the next instruction to be executed. After every instruction execution it’s value is incremented depending upon the size of an instrution.
+
+%esp: The Stack pointer register. It stores the address of the top of the stack. This is the address of the last element on the stack. The stack grows downward in memory(from higher address values to lower address values). So the %esp points to the value in stack at the lowest memory address.
+
+%ebp: The Base pointer register. The %ebp register usually set to %esp at the start of the function. This is done to keep tab of function parameters and local variables. Local variables are accessed by subtracting offsets from %ebp and function parameters are accessed by adding offsets to it as you shall see in the next section.
